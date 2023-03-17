@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Header Styling */
+.header-logo img{
+    width: 34px;
+    height: 34px;
+}
+
+.header-container, .header-logo, ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container{
+    padding: 1.5em 3.3125em;
+}
+
+.title{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-left: 4px;
+}
+
+li{
+    list-style: none;
+}
+
+.nav-list{
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 1.5em;
+    color: #090909;
+}
+
+/* Hero Styling */
+.hero-img-container img{
+    height: 70vh;
+}
+
+.hero-img-container{
+    position:relative
+}
+
+.hero-container{
+    position: absolute;
+    bottom: 3.75em;
+    left: 3.3125em;
+    max-width: 650px;
+    color: white;
+}
+
+.hero-date{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.hero-title{
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 10px 0;
+}
+
+.hero-description{
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+}
+
+/* Blogs Container Styling */
+.blogs-container{
+    display: grid;
+    grid-gap: 2.75em; 
+    grid-template: 1fr 1fr/ 1fr 1fr 1fr ;
+    padding: 2.75em;
+}
+
+/* Individual Blog Styling */
+.blog-img{
+    border-radius: 3px;
+}
+
+.blog-date{
+    margin: 0.875em 0;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.blog-title{
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem;
+    color: #141414;
+}
+
+.blog-description{
+    font-weight: 400;
+    color: #505050;
+}
+
+/* View More Button */
+.view-more{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin-top: 2em;
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-decoration-line: underline;
+}
+
+/* Footer styling */
+.footer-container{
+    margin-top:  3.3125em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    height: 15vh;
+    
+}
+
+.web-title{
+    color: #ECECEC;
+    letter-spacing: -0.03em;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.copyright{
+    color: #D7D7D7;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+@media (max-width: 480px){
+    
+    /* Header Styling */
+    .header-container{
+        padding: 1em 1.25em;
+    }
+
+    .header-logo img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .title{
+        font-size: 0.8125rem;
+    }
+
+    .nav-list{
+        font-size: 0.8rem;
+    }
+
+    /* Hero Styling */
+    .hero-img-container img{
+        height: 80vh;
+    }
+
+    .hero-container{
+        bottom: 1.5em;
+        left: 1.25em;
+        max-width: 400px;
+    }
+
+    .hero-date{
+        font-size: 0.8125rem;
+    }
+    
+    .hero-title{
+        font-size: 2rem;
+    }
+    
+    .hero-description{
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+    /* Blogs Container Styling */
+    .blogs-container{
+        grid-gap: 2.125em; 
+        grid-template: 1fr 1fr 1fr 1fr 1fr 1fr/ 1fr ;
+        padding: 2.75em;
+    }
+
+    /* Individual Blog Styling */
+    .blog-date{
+        margin: 0.625em 0;
+    }
+
+    /* View More Button */
+    button{
+        margin-top: 0;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 600px){
+    /* Header Styling */
+    .header-container{
+        padding: 1em 1.25em;
+    }
+
+    .header-logo img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .title{
+        font-size: 1rem;
+    }
+
+    .nav-list{
+        font-size: 1rem;
+    }
+
+    /* Hero Styling */
+    .hero-img-container img{
+        height: 60vh;
+    }
+
+    .hero-container{
+        bottom: 3em;
+        left: 1.25em;
+        max-width: 400px;
+    }
+
+    .hero-date{
+        font-size: 0.8125rem;
+    }
+    
+    .hero-title{
+        font-size: 2rem;
+    }
+    
+    .hero-description{
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+     /* Blogs Container Styling */
+    .blogs-container{
+        grid-gap: 2.125em; 
+        grid-template: 1fr 1fr 1fr / 1fr 1fr;
+        padding: 2.75em;
+    }
+
+    /* View More Button */
+    button{
+        margin-top: 1em;
+        font-size: 1rem;
+    }
+}
